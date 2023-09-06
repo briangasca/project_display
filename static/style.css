@@ -1,93 +1,126 @@
 body {
-    background-color: lightblue;
+    background-color: #8b929e;
+    color: white;
 }
 
 h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*-------------- Dropdown ---------------*/
+:root {
+  --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
 
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
 
 /* ----------Graph Display--------- */
 
+.container{
+  font-family: 'Quicksand', sans-serif;
+}
 .noMargin {
     margin: 0px;
   }
   
   .one {
-    background-color: red;
+    background-color: #b4bdcc;
     margin:15px;
     width: 750px;
     height: 550px;
+    text-align: center;
+    border-radius: 10px;
 
+  }
+
+  .LR{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 45px;
   }
   
   .two {
-    background-color: yellow;
+    background-color: #b4bdcc;
     margin:15px;
     width: 750px;
     height: 550px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .keras{
+    width: 525px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin: 25px;
   }
   
   .three {
-    background-color: green;
+    background-color: #b4bdcc;
     margin:15px;
     width: 750px;
     height: 550px;
+    text-align: center;
+    border-radius: 10px;
   }
   
   .four {
-    background-color: blue;
+    background-color: #b4bdcc;
     margin:15px;
     width: 750px;
     height: 550px;
+    text-align: center;
+    border-radius: 10px;
   }
 
 

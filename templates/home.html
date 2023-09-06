@@ -2,26 +2,34 @@
  {% block title %}Home{% endblock %}
  {% block content %}
  <h1>Stock Prediction with Machine Learning</h1>
- <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">TSLA</a>
-    <a href="#">APPL</a>
-    <a href="#">META</a>
+ <div class= "container">
+  <div class="select">
+    <select id="choice" class="form-control" onchange="changeImage()">
+      <option value="1">TSLA</option>
+      <option value="2">AAPL</option>
+      <option value="3">META</option>
+      <option value="4">KO (Coke)</option>
+      <option value="5">GOOGL</option>
+    </select>
   </div>
-</div>
+  <div class = "down_note">
+  <p>Pick Your Desired Stock</p>
+  </div>
+</div> 
  <div class="container">
   <div class="row noMargin">
     <div class="col one">
       Linear Regression
+      <img src="static/images/TSLA/lr_tsla.png" alt="" class="LR" id="LR">
     </div>
     <div class="col two">
       Keras LSTM
+      <img src="static/images/TSLA/keras_tsla.png" alt="" class="keras" id="keras">
     </div>
   </div>
   <div class="row noMargin">
     <div class="col three">
-      Decision Tree Regressor XGBoost
+      XGBoost
     </div>
     <div class="col four">
       Random Forest
