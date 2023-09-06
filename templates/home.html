@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+ {% block title %}Home{% endblock %}
+ {% block content %}
+ <h1>Stock Prediction with Machine Learning</h1>
+ <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">TSLA</a>
+    <a href="#">APPL</a>
+    <a href="#">META</a>
+  </div>
+</div>
+ <div class="container">
+  <div class="row noMargin">
+    <div class="col one">
+      Linear Regression
+    </div>
+    <div class="col two">
+      Keras LSTM
+    </div>
+  </div>
+  <div class="row noMargin">
+    <div class="col three">
+      Decision Tree Regressor XGBoost
+    </div>
+    <div class="col four">
+      Random Forest
+    </div>
+  </div>
+  </div>
+ {% endblock %}
