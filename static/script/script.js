@@ -1,3 +1,9 @@
+// 1: TSLA
+// 2: AAPL
+// 3: META
+// 4: KO
+// 5: GOOGL
+
 function changeImage(){
     var choice = document.getElementById('choice').value;
     console.log(choice);
