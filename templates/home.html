@@ -2,7 +2,7 @@
  {% block title %}Home{% endblock %}
  {% block content %}
  <h1>Stock Prediction with Machine Learning</h1>
- <div class= "container">
+ <div class= "container_drp">
   <div class="select">
     <select id="choice" class="form-control" onchange="changeImage()">
       <option value="1">TSLA</option>
@@ -15,11 +15,12 @@
   <div class = "down_note">
   <p>Pick Your Desired Stock</p>
   </div>
+  <h2>Stock: </h2>
 </div> 
- <div class="container">
+ <div class="container" id="container">
   <div class="row noMargin">
     <div class="col one">
-      Linear Regression
+      ARIMA Linear Regression
       <img src="static/images/TSLA/lr_tsla.png" alt="" class="LR" id="LR">
     </div>
     <div class="col two">

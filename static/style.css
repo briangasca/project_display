@@ -1,6 +1,7 @@
 body {
-    background-color: #8b929e;
-    color: white;
+  background: rgb(34,34,34);
+  background: linear-gradient(90deg, rgba(34,34,34,1) 12%, rgba(102,123,126,1) 100%);
+  color: white;
 }
 
 h1{
@@ -11,6 +12,9 @@ h1{
 }
 
 /*-------------- Dropdown ---------------*/
+.container_drp{
+  padding: 50px;
+}
 :root {
   --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
   --gray: #34495e;
@@ -63,9 +67,41 @@ select::-ms-expand {
 
 /* ----------Graph Display--------- */
 
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-50px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
+
+@keyframes fadeIn_reload {
+  0% {
+     opacity: 0;
+     transform: translateX(-100%);
+     filter: blur(5px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+     filter: blur(0);
+  }
+} 
+
+.fadeIn_reload {
+  animation: fadeIn_reload ease-in 1s !important;
+}
+
 .container{
   font-family: 'Quicksand', sans-serif;
+  animation:fadeInDown ease-in 2.5s; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  
 }
+
+
 .noMargin {
     margin: 0px;
   }
@@ -95,6 +131,7 @@ select::-ms-expand {
     height: 550px;
     text-align: center;
     border-radius: 10px;
+
   }
 
   .keras{
