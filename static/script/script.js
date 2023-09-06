@@ -11,7 +11,7 @@ function changeImage(){
     container.classList.add('fadeIn_reload');
     setTimeout(() => {
         container.style.display = 'block';
-    }, 25)
+    }, 250)
 
 
 

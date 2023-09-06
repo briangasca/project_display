@@ -1,7 +1,9 @@
 body {
-  background: rgb(34,34,34);
-  background: linear-gradient(90deg, rgba(34,34,34,1) 12%, rgba(102,123,126,1) 100%);
+  /* background: rgb(34,34,34); */
+  background: linear-gradient(180deg, rgba(34,34,34,1) 12%, rgba(102,123,126,1) 100%);
   color: white;
+  width: 100%;
+  height: 100vw;
 }
 
 h1{
@@ -93,6 +95,7 @@ select::-ms-expand {
 
 .fadeIn_reload {
   animation: fadeIn_reload ease-in 1s !important;
+  display: block;
 }
 
 .container{
@@ -105,6 +108,11 @@ select::-ms-expand {
 .noMargin {
     margin: 0px;
   }
+
+.noMargin_2{
+  transition-delay: 200ms;
+}
+
   
   .one {
     background-color: #b4bdcc;
