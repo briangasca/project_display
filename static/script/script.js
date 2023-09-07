@@ -26,50 +26,70 @@ function changeImage(){
         document.getElementById("stock").innerHTML = "Stock: Tesla Motors";
         document.getElementById('LR').src="static/images/arima/lr_tsla.png";
         document.getElementById('keras').src="static/images/keras/keras_tsla.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_tsla.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_tsla.png";
     }
     if (choice == "2"){
         document.getElementById("stock").innerHTML = "Stock: Apple Inc.";
         document.getElementById('LR').src='static/images/arima/lr_aapl.png';
         document.getElementById('keras').src="static/images/keras/keras_aapl.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_aapl.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_aapl.png";
     }
     if (choice == "3"){
         document.getElementById("stock").innerHTML = "Stock: Meta (Facebook)";
         document.getElementById('LR').src='static/images/arima/lr_meta.png';
         document.getElementById('keras').src="static/images/keras/keras_meta.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_meta.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_meta.png";
     }
     if (choice == "4"){
         document.getElementById("stock").innerHTML = "Stock: Coca-Cola Company";
         document.getElementById('LR').src='static/images/arima/lr_ko.png';
         document.getElementById('keras').src="static/images/keras/keras_ko.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_ko.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_ko.png";
     }
     if (choice == "5"){
         document.getElementById("stock").innerHTML = "Stock: Google";
         document.getElementById('LR').src='static/images/arima/lr_googl.png';
         document.getElementById('keras').src="static/images/keras/keras_googl.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_googl.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_googl.png";
     }
     if (choice == "6"){
         document.getElementById("stock").innerHTML = "Stock: Costco";
         document.getElementById('LR').src='static/images/arima/lr_cost.png';
         document.getElementById('keras').src="static/images/keras/keras_cost.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_cost.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_cost.png";
     }
     if (choice == "7"){
         document.getElementById("stock").innerHTML = "Stock: Gamestop Inc.";
         document.getElementById('LR').src='static/images/arima/lr_gme.png';
         document.getElementById('keras').src="static/images/keras/keras_gme.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_gme.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_gme.png";
     }
     if (choice == "8"){
         document.getElementById("stock").innerHTML = "Stock: JP Morgan & Chase";
         document.getElementById('LR').src='static/images/arima/lr_jpm.png';
         document.getElementById('keras').src="static/images/keras/keras_jpm.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_jpm.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_jpm.png";
     }
     if (choice == "9"){
         document.getElementById("stock").innerHTML = "Stock: Walmart";
         document.getElementById('LR').src='static/images/arima/lr_wmt.png';
         document.getElementById('keras').src="static/images/keras/keras_wmt.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_wmt.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_wmt.png";
     }
     if (choice == "10"){
         document.getElementById("stock").innerHTML = "Stock: Bitcoin";
         document.getElementById('LR').src='static/images/arima/lr_btc.png';
         document.getElementById('keras').src="static/images/keras/keras_btc.png";
+        document.getElementById('xgb').src="static/images/xgboost/xgb_btc-usd.png";
+        document.getElementById('prophet').src="static/images/prophet/prophet_btc-usd.png";
     }
 }

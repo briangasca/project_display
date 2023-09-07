@@ -160,6 +160,14 @@ select::-ms-expand {
     text-align: center;
     border-radius: 10px;
   }
+
+  .xgb{
+    width: 525px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+  }
   
   .four {
     background-color: #343554;
@@ -168,6 +176,13 @@ select::-ms-expand {
     height: 550px;
     text-align: center;
     border-radius: 10px;
+  }
+  .prophet{
+    width: 525px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin: 25px;
   }
 
 
