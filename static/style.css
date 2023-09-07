@@ -1,9 +1,11 @@
 body {
-  /* background: rgb(34,34,34); */
-  background: linear-gradient(180deg, rgba(34,34,34,1) 12%, rgba(102,123,126,1) 100%);
+  background: rgb(2,0,36);
+  /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 47%); */
+  background: radial-gradient(circle, rgba(2,0,43,1) 0%, rgba(0,0,0,1) 100%);
   color: white;
   width: 100%;
   height: 100vw;
+  z-index: 2;
 }
 
 h1{
@@ -11,11 +13,12 @@ h1{
     align-items: center;
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
+    padding-top: 10px;
 }
 
 /*-------------- Dropdown ---------------*/
 .container_drp{
-  padding: 50px;
+  padding-left: 40%;
 }
 :root {
   --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
@@ -83,8 +86,8 @@ select::-ms-expand {
 @keyframes fadeIn_reload {
   0% {
      opacity: 0;
-     transform: translateX(-100%);
-     filter: blur(5px);
+     transform: translateX(-25%);
+     filter: blur(2.5px);
   }
   100% {
      opacity: 1;
@@ -115,7 +118,7 @@ select::-ms-expand {
 
   
   .one {
-    background-color: #b4bdcc;
+    background-color: #343554;
     margin:15px;
     width: 750px;
     height: 550px;
@@ -133,7 +136,7 @@ select::-ms-expand {
   }
   
   .two {
-    background-color: #b4bdcc;
+    background-color: #343554;
     margin:15px;
     width: 750px;
     height: 550px;
@@ -151,7 +154,7 @@ select::-ms-expand {
   }
   
   .three {
-    background-color: #b4bdcc;
+    background-color: #343554;
     margin:15px;
     width: 750px;
     height: 550px;
@@ -160,7 +163,7 @@ select::-ms-expand {
   }
   
   .four {
-    background-color: #b4bdcc;
+    background-color: #343554;
     margin:15px;
     width: 750px;
     height: 550px;
@@ -169,5 +172,151 @@ select::-ms-expand {
   }
 
 
+  /* ------------Animated Background------------ */
 
+.main-area{
+  width: 100%;
+  height: 2000px;
+  z-index: 1;
+}
+
+.circles { 
+  position: absolute;
+  margin-top: 200px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+  z-index: 1;
+}
   
+@keyframes animate{
+  0%{
+    opacity: 1;
+    border-radius: 0;
+    transform: translateY(0) rotate(0deg);
+  }
+  100%{
+    opacity: 0;
+    border-radius: 50%;
+    transform: translateY(-3000px) rotate(720deg);
+  }
+}
+
+.circles div {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,0.2);
+  bottom: -150px;
+  animation: animate 40s linear infinite;
+}
+
+.circles div:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles div:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 49s
+}
+
+.circles div:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles div:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 26s;
+}
+
+.circles div:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles div:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles div:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles div:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles div:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 38s;
+}
+
+.circles div:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 26s;
+}
+
+/* ----------About Us---------- */
+
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 10px;
+}
+
+.brian{
+  background-color: #010020;
+  outline-color: white;
+  outline: 5px;
+  margin:15px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.shawn{
+  background-color: #010020;
+  outline-color: white;
+  outline: 5px;
+  margin:15px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 10px;
+}
