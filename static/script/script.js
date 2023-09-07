@@ -22,22 +22,27 @@ function changeImage(){
     var choice = document.getElementById('choice').value;
     console.log(choice);
     if (choice == "1"){
+        document.getElementById("stock").innerHTML = "Stock: Tesla Motors";
         document.getElementById('LR').src="static/images/TSLA/tsla_lr.png";
         document.getElementById('keras').src="static/images/TSLA/keras_tsla.png";
     }
     if (choice == "2"){
+        document.getElementById("stock").innerHTML = "Stock: Apple Inc.";
         document.getElementById('LR').src='static/images/APPL/aapl_lr.png';
         document.getElementById('keras').src="static/images/APPL/keras_aapl.png";
     }
     if (choice == "3"){
+        document.getElementById("stock").innerHTML = "Stock: Meta (Facebook)";
         document.getElementById('LR').src='static/images/META/meta_lr.png';
         document.getElementById('keras').src="static/images/META/keras_meta.png";
     }
     if (choice == "4"){
+        document.getElementById("stock").innerHTML = "Stock: Coca-Cola Company";
         document.getElementById('LR').src='static/images/KO/ko_lr.png';
         document.getElementById('keras').src="static/images/KO/keras_ko.png";
     }
     if (choice == "5"){
+        document.getElementById("stock").innerHTML = "Stock: Google";
         document.getElementById('LR').src='static/images/GOOGL/googl_lr.png';
         document.getElementById('keras').src="static/images/GOOGL/keras_googl.png";
     }
