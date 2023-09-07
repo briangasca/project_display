@@ -86,7 +86,7 @@ select::-ms-expand {
 @keyframes fadeIn_reload {
   0% {
      opacity: 0;
-     transform: translateX(-25%);
+     transform: translateX(-50%);
      filter: blur(2.5px);
   }
   100% {
@@ -97,7 +97,7 @@ select::-ms-expand {
 } 
 
 .fadeIn_reload {
-  animation: fadeIn_reload ease-in 1s !important;
+  animation: fadeIn_reload ease-in-out 1s !important;
   display: block;
 }
 
@@ -211,7 +211,7 @@ select::-ms-expand {
   height: 20px;
   background: rgba(255,255,255,0.2);
   bottom: -150px;
-  animation: animate 40s linear infinite;
+  animation: animate 35s linear infinite;
 }
 
 .circles div:nth-child(1){
