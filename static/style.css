@@ -225,7 +225,7 @@ select::-ms-expand {
   width: 20px;
   height: 20px;
   animation-delay: 2s;
-  animation-duration: 49s
+  animation-duration: 31s
 }
 
 .circles div:nth-child(3){
@@ -261,7 +261,7 @@ select::-ms-expand {
   left: 35%;
   width: 150px;
   height: 150px;
-  animation-delay: 7s;
+  animation-delay: 4s;
 }
 
 .circles div:nth-child(8){
@@ -269,7 +269,7 @@ select::-ms-expand {
   width: 25px;
   height: 25px;
   animation-delay: 15s;
-  animation-duration: 45s;
+  animation-duration: 35s;
 }
 
 .circles div:nth-child(9){
