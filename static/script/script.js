@@ -64,8 +64,8 @@ function changeImage(){
     }
     if (choice == "9"){
         document.getElementById("stock").innerHTML = "Stock: Walmart";
-        document.getElementById('LR').src='static/images/arima/lr_wme.png';
-        document.getElementById('keras').src="static/images/keras/keras_wme.png";
+        document.getElementById('LR').src='static/images/arima/lr_wmt.png';
+        document.getElementById('keras').src="static/images/keras/keras_wmt.png";
     }
     if (choice == "10"){
         document.getElementById("stock").innerHTML = "Stock: Bitcoin";

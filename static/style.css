@@ -176,18 +176,18 @@ select::-ms-expand {
 .main-area{
   width: 100%;
   height: 2000px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .circles { 
   position: absolute;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   top: 0;
   left: 0;
   width: 100%;
   height: 200%;
   overflow: hidden;
-  z-index: 1;
+  z-index: -1;
 }
   
 @keyframes animate{
@@ -210,7 +210,7 @@ select::-ms-expand {
   height: 20px;
   background: rgba(255,255,255,0.2);
   bottom: -150px;
-  animation: animate 35s linear infinite;
+  animation: animate 25s linear infinite;
 }
 
 .circles div:nth-child(1){
@@ -221,7 +221,7 @@ select::-ms-expand {
 }
 
 .circles div:nth-child(2){
-  left: 10%;
+  left: 5%;
   width: 20px;
   height: 20px;
   animation-delay: 2s;
@@ -229,14 +229,14 @@ select::-ms-expand {
 }
 
 .circles div:nth-child(3){
-  left: 70%;
+  left: 90%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
 }
 
 .circles div:nth-child(4){
-  left: 40%;
+  left: 80%;
   width: 60px;
   height: 60px;
   animation-delay: 0s;
@@ -251,7 +251,7 @@ select::-ms-expand {
 }
 
 .circles div:nth-child(6){
-  left: 75%;
+  left: 95%;
   width: 110px;
   height: 110px;
   animation-delay: 3s;
@@ -265,7 +265,7 @@ select::-ms-expand {
 }
 
 .circles div:nth-child(8){
-  left: 50%;
+  left: 15%;
   width: 25px;
   height: 25px;
   animation-delay: 15s;
@@ -288,6 +288,46 @@ select::-ms-expand {
   animation-duration: 26s;
 }
 
+.circles div:nth-child(11){
+  left: 65%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 10s;
+  animation-duration: 32s;
+}
+
+.circles div:nth-child(12){
+  left: 10%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 13s;
+  animation-duration: 26s;
+}
+
+.circles div:nth-child(13){
+  left: 90%;
+  width: 75px;
+  height: 75px;
+  animation-delay: 17s;
+  animation-duration: 22s;
+}
+
+.circles div:nth-child(14){
+  left: 45%;
+  width: 45px;
+  height: 45px;
+  animation-delay: 12s;
+  animation-duration: 33s;
+}
+
+.circles div:nth-child(15){
+  left: 15%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 14s;
+  animation-duration: 26s;
+}
+
 /* ----------About Us---------- */
 
 h3{
@@ -307,6 +347,7 @@ h3{
   height: 400px;
   text-align: center;
   border-radius: 10px;
+  z-index: -2;
 }
 
 .shawn{
@@ -318,6 +359,7 @@ h3{
   height: 400px;
   text-align: center;
   border-radius: 10px;
+  z-index: -2;
 }
 
 .links{
@@ -326,6 +368,5 @@ h3{
   justify-content: center;
 }
 
-a{
-  padding-right: 50px;
-}
+
+
