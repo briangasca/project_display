@@ -1,5 +1,4 @@
-DevContainer and other configuration for developing Flask projects
-with GitHub Codespaces.
+SPIS 2023 Final Project: Stock Prediction with Machine Learning
 
 Developed by: Brian Gasca and Shawn Cheng
 
@@ -12,3 +11,6 @@ ML Models:
 - XGBoost
 
 - Prophet
+
+DevContainer and other configuration for developing Flask projects
+with GitHub Codespaces.
