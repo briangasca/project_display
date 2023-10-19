@@ -1,4 +1,4 @@
-SPIS 2023 Final Project: Stock Prediction with Machine Learning
+# SPIS 2023 Final Project: Stock Prediction with Machine Learning
 
 Developed by: Brian Gasca and Shawn Cheng
 
