@@ -1,12 +1,14 @@
 DevContainer and other configuration for developing Flask projects
-with GitHub Codespaces
+with GitHub Codespaces.
+
+Developed by: Brian Gasca and Shawn Cheng
 
 ML Models:
 
-Tensorflow Keras
+- Tensorflow Keras
 
-ARIMA Regression
+- ARIMA Regression
 
-XGBoost
+- XGBoost
 
-Prophet
+- Prophet
